@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Outfit:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0e1412;
+  --color-surface: #171e1b;
+  --color-surface-2: #1f2925;
+  --color-fg: #eef4ef;
+  --color-muted: #8aa396;
+  --color-primary: #c8f54e;
+  --color-primary-ink: #17200a;
+  --color-border: #2a3832;
+  --color-danger: #e07a5f;
+  --color-warn: #e6c07b;
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+  --radius: 0.9rem;
+}
+
+@layer base {
+  html, body { background: var(--color-bg); color: var(--color-fg); }
+  button:not(:disabled), [role="button"]:not(:disabled) { cursor: pointer; }
+  body { font-family: var(--font-sans); line-height: 1.5; }
+}
+
+@utility font-display { font-family: var(--font-display); }
